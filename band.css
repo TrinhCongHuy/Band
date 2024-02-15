@@ -10,11 +10,10 @@ html{
     z-index: 1;
     right: 0;
     left: 0;
-    height:46px;
+    height: 46px;
     top: 0;
     background-color: black;
     position:fixed;
-    /* overflow: hidden; */
 }
 #nav {
     display: inline-block;

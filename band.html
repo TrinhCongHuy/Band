@@ -147,35 +147,8 @@
             <p class="footer_close">Powered by <a href="#">HuyIT</a></p>
         </div>
     </div>
-    <script>
-        var header = document.getElementById('header');
-        var mobileMenu = document.getElementById('mobile-menu');
-        var headerHeight = header.clienHeight;
-        mobileMenu.onclick = function() {
-            var isClose = header.clienHeight === headerHeight;
-            if (isClose) {
-                header.style.height = 'auto';
-            }
-            else{
-                header.style.height = null; 
-            }
-        }
-        // Tự động đóng menu
-        var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
-        for (var i = 0 ; i < menuItems.length; i++){
-
-            var menuItem = menuItems[i];
-            menuItem.onclick = function(event){
-            var isParentMenu = this.nextElementSibling && menuItem.nextElementSibling.classList.contains('subnav');
-                if (!isParentMenu){
-                    header.style.height = null;
-                }else{
-                    event.prevenDefault();
-                }
-                
-            }
-        }
-    </script>
+    
+    <!-- modal -->
     <div class="modal js-modal">
 
         <div class="modal-container js-modal-container">
