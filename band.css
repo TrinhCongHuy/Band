@@ -154,7 +154,10 @@ html{
     color:white;
 }
 #Contact {
+    display: flex;
+    flex: 1;
     background-color: black;
+    height: auto;
 }
 .sticket{
     background-color: white;
@@ -253,7 +256,8 @@ html{
     min-height:200px;
     background-color: white;
     position: relative;
-    animation: modalFaceIn ease .5s;
+    animation: modalFaceIn ease .6s;
+    -webkit-animation: modalFaceIn ease .6s;
 }
 .js-modal-close{
    position:absolute;
@@ -320,7 +324,7 @@ html{
     } 
 }
 .context_place_1{
-    font-size:14px;
+    font-size: 18px;
     line-height: 1.6;
     float: left;
     width: 50%;
@@ -331,7 +335,8 @@ html{
 .contact-info{
     margin-left: -8px;
     margin-left: -8px;
-    height:300px;
+    height: 300px;
+    flex-wrap: wrap;
 }
 .context_place_2{
     float: left;
@@ -347,27 +352,41 @@ html{
 }
 .place-body-1{
     float: left;
-    width: 32%;
-    margin-right: 63px;
+    width: 34%;
     margin-bottom: 15px;
     padding: 5px 0px;
 }
+.place-body-1:nth-child(1) {
+    margin-right: 63px;
+}
 .form-control{
-    padding:9px 3px;
+    flex: 1;
+    min-width: 100%;
+    padding: 9px 3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    outline: none;
+    border: 1px solid #817b7b;
 }
 .place-body-2{
-    float: left;
     width: 100%;
-    padding-right: 10px;
-    margin-top:4px;
+    margin-top: 4px;
 }
 .place-btn{
-    float: left;
+    float: right;
     padding: 9px 15px;
     background-color: black;
     color: white;
     border: 1px solid white;
     margin-top: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 .place-btn:hover{
     color: black;
@@ -391,12 +410,16 @@ html{
 .footer_img a:hover{
     color:grey;
 }    
+.footer_img i {
+    font-size: 20px;
+}
 .footer_close{
     padding-top:10px;
     font-size:20px;
 }
 .footer_close a{
-    color:rgb(60, 60, 61);
+    color:rgb(142, 142, 146);
+    font-size: 15px;
 }
 
 

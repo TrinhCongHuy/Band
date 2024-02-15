@@ -19,7 +19,7 @@
         display:block;
     }
     #nav > li:first-child{
-        display:inline-block;
+        display: inline-block;
     }
     #nav .subnav{
         position: inherit;
@@ -42,5 +42,23 @@
     }
     #content .content_img{
         height: 800px;
+    }
+    #content .place-body {
+        margin: unset;
+    }
+    #content .contact-info .context_place_1 {
+        width: 100%;
+        font-size: 21px;
+        margin-left: -15px;
+    }
+    #content .contact-info .context_place_2 {
+        width: 100%;
+    }
+    #content .contact-info .context_place_2 .place-body > div {
+        width: 100%;
+    }
+    #content .place-list .place-item {
+        width: 100%;
+        margin-top: 10px;
     }
 }

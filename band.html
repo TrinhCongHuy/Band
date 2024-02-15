@@ -72,36 +72,36 @@
                         <li>November <span class="sticket_2 ">3</span></li>
                     </ul>
 
-                <div class="place-list">
-                    <div class="place-item">
-                        <img src="src/place1.jpg" class="place-img">
-                        <div class="place-body">
-                            <h3 class="place-heading">New York</h3>
-                            <p class="place-time">Fri 27 Nov 2016</p>
-                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="button-tickets js-sticket">Buy Tickets</button> 
+                    <div class="place-list">
+                        <div class="place-item">
+                            <img src="src/place1.jpg" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">New York</h3>
+                                <p class="place-time">Fri 27 Nov 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="button-tickets js-sticket">Buy Tickets</button> 
+                            </div>
                         </div>
-                    </div>
-                    <div class="place-item">
-                        <img src="src/place2.jpg" class="place-img">
-                        <div class="place-body">
-                            <h3 class="place-heading">paris</h3>
-                            <p class="place-time">Sat 28 Nov 2016</p>
-                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="button-tickets js-sticket">Buy Tickets</button>
+                        <div class="place-item">
+                            <img src="src/place2.jpg" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">Paris</h3>
+                                <p class="place-time">Sat 28 Nov 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="button-tickets js-sticket">Buy Tickets</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="place-item">
-                        <img src="src/place3.jpg" class="place-img">
-                        <div class="place-body">
-                            <h3 class="place-heading">Francisco</h3>
-                            <p class="place-time">Sun 29 Nov 2016</p>
-                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="button-tickets js-sticket">Buy Tickets</button>
+                        <div class="place-item">
+                            <img src="src/place3.jpg" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">Francisco</h3>
+                                <p class="place-time">Sun 29 Nov 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="button-tickets js-sticket">Buy Tickets</button>
+                            </div>
                         </div>
-                    </div>
-                </div> 
-            </div>
+                    </div> 
+                </div>
             </div>
 
             <div id="contact" class="text_content ">
@@ -114,7 +114,7 @@
                         <p><i class="ti-mobile"> Phone:+00151515</i></p>
                         <p><i class="ti-email"> Email:mail@mail.com</i></p>
                     </div>
-                    <div class=" context_place_2">
+                    <div class="context_place_2">
                         <form action="">
                             <div class="place-body">
                                 <div class="place-body-1">
@@ -137,14 +137,14 @@
         </div>
         <div id="footer">
             <div class="footer_img">
-                <a href=""><i class="ti-facebook"></i></a>
-                <a href=""><i class="ti-instagram"></i></a>
-                <a href=""><i class="ti-youtube"></i></a>
-                <a href=""><i class="ti-pinterest"></i></a>
-                <a href=""><i class="ti-twitter"></i></a>
-                <a href=""><i class="ti-linkedin"></i></a>
+                <a href="#"><i class="ti-facebook"></i></a>
+                <a href="#"><i class="ti-instagram"></i></a>
+                <a href="#"><i class="ti-youtube"></i></a>
+                <a href="#"><i class="ti-pinterest"></i></a>
+                <a href="#"><i class="ti-twitter"></i></a>
+                <a href="#"><i class="ti-linkedin"></i></a>
             </div>
-            <p class="footer_close">Powered by <a href="#">w3.css</a></p>
+            <p class="footer_close">Powered by <a href="#">HuyIT</a></p>
         </div>
     </div>
     <script>
@@ -176,7 +176,7 @@
             }
         }
     </script>
-    <div class="modal open js-modal">
+    <div class="modal js-modal">
 
         <div class="modal-container js-modal-container">
 
@@ -204,7 +204,7 @@
                 <input id="quatity_2" type="email" class="modal-input" placeholder="Enter email">
                 
                 <button id="buy-stickets">
-                    pay <i class="ti-check"></i>
+                    PAY <i class="ti-check"></i>
                 </button>
 
             </div> 
@@ -216,29 +216,6 @@
         </div>
     </div>
 
-    <script>
-        const buyBtns= document.querySelectorAll('.js-sticket')
-        const modal = document.querySelector('.js-modal')
-        const modalContainer = document.querySelector('.js-modal-container')
-        const modalClose = document.querySelector('.js-modal-close')
-
-        function showBuyTickets(){
-            modal.classList.add('open') 
-        }
-
-        function hideBuyTickets(){
-            modal.classList.remove('open')
-        }
-
-        for ( const buyBtn of buyBtns){
-            buyBtn.addEventListener('click',showBuyTickets)
-        }
-
-        modalClose.addEventListener('click',hideBuyTickets)
-        modal.addEventListener('click',hideBuyTickets)
-        modalContainer.addEventListener('click',function(event){
-            event.stopPropagation()
-        })
-    </script>
+    <script src="./band.js"></script>
 </body>
 </html>
